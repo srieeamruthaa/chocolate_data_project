@@ -65,4 +65,6 @@ Detail how to start and interact with the application:
 
 #output
 The admin can insert ,delete,update the detail in admin page  http://127.0.0.1:8000/admin/
+![image alt](https://github.com/srieeamruthaa/chocolate_data_project/blob/3978a30e68e03bd8e1e34217bded057b2d87ba92/Screenshot%202024-11-16%20165205.png)
+
 
