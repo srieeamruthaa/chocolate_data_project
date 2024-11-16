@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>All data</title>  
+    </head>
+    <body>
+        <h1>Seasonal Flavors</h1>
+        <ul>
+            {% for flavor in seasonal_flavors %}
+                <li>
+                <strong>{{flavor.name}}</strong>:{{flavor.about}}<br>Available:{{flavor.is_available}}<br>
+                Start Date: {{ flavor.start_date|date:"F j, Y" }} <br>
+                End Date: {{ flavor.end_date|date:"F j, Y" }}
+            </li>
+             {% empty %}
+                <li> No flavour available</li>
+            {% endfor %}
+        </ul>
+        <hr>
+
+    <h1>Ingredients</h1>
+    <ul>
+        {% for ingredient in ingredients %}
+            <li>
+                <strong>{{ ingredient.name }}</strong> <br>
+                Quantity: {{ ingredient.quantity }} <br>
+               Unit: {{ ingredient.unit }} <br>
+                Allergy Warning: {{ ingredient.allergy_warning|default:"None" }}
+            </li>
+        {% empty %}
+            <li>No ingredients available.</li>
+        {% endfor %}
+    </ul>
+    <hr>
+    <h1>Customer Suggestions</h1>
+    <ul>
+        {% for suggestion in customer_suggestions %}
+            <li>
+                <strong>{{ suggestion.customer_name }}</strong> suggested for <em>{{ suggestion.flavor.name }}</em>: <br>
+                Suggestion: {{ suggestion.suggestion }} <br>
+                Allergies: {{ suggestion.allergies|default:"None" }}
+            </li>
+        {% empty %}
+            <li>No customer suggestions available.</li>
+        {% endfor %}
+    </ul>
+    <hr>
+    </body>
+</html>
