@@ -68,5 +68,5 @@ Detail how to start and interact with the application:
 ![image alt](https://github.com/srieeamruthaa/chocolate_data_project/blob/3978a30e68e03bd8e1e34217bded057b2d87ba92/Screenshot%202024-11-16%20165205.png)
 
 -the display is shown on http://127.0.0.1:8000/myapp_name/flavors/
-![image alt](
+![image alt](https://github.com/srieeamruthaa/chocolate_data_project/blob/03b2046b8ae4a5f9b99cdee6dda3c02b5170457f/Screenshot%202024-11-16%20163723.png)
 
